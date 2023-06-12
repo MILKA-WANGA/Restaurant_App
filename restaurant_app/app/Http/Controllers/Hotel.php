@@ -9,6 +9,6 @@ class Hotel extends Controller
     //
     function index()
     {
-        return "Resto";
+        return view("Home");
     }
 }
