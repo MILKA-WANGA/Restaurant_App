@@ -5,18 +5,18 @@
 
 <h1>Add page</h1>
 <div class="col-sm-6">
-<form>
-    <div class="for-group">
+<form action="add" method=POST>
+    <div class="mb-3">
       <label >Name:</label>
       <input type="text" name="name">
       
     </div>
-    <div class="for-group">
+    <div class="mb-3">
         <label >Email:</label>
         <input type="email" name="email">
         
       </div>
-      <div class="for-group">
+      <div class="mb-3">
         <label >Password:</label>
         <input type="password" name="password">
         

@@ -17,5 +17,9 @@ class Hotel extends Controller
         $data=Restaurant::all();
         return view('list',["data"=>$data]);
     }
-    
+     function  add(Request $req)
+     {
+        return $req->input();
+        
+     }
 }
