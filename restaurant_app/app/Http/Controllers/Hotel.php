@@ -17,4 +17,5 @@ class Hotel extends Controller
         $data=Restaurant::all();
         return view('list',["data"=>$data]);
     }
+    
 }
