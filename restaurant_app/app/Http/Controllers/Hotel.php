@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Restaurant;
 
 class Hotel extends Controller
 {
@@ -13,6 +14,7 @@ class Hotel extends Controller
     }
     function list()
     {
-        return view("list");
+        $data=Restaurant::all();
+        return view('list',["list"=>$data]);
     }
 }
