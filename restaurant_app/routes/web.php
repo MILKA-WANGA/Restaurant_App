@@ -19,4 +19,4 @@ use App\Http\Controllers\Hotel;
 //     return view('welcome');
 // });
 Route::get("/",[Hotel::class,'index']);
-Route::get("/list",[Hotel::class,'index']);
+Route::get("/list",[Hotel::class,'list']);
