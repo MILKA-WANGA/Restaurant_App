@@ -19,7 +19,14 @@ class Hotel extends Controller
     }
      function  add(Request $req)
      {
-        return $req->input();
+        // return $req->input();
+        $data=new Restaurant;
+        $data->name=$req->input('name'); 
+        $data->email=$req->input('email');   
+        $data->password=$req->input('password');  
+        $data->save();
+       // $data->session()->flash('status',"Data added successful");
         
+
      }
 }

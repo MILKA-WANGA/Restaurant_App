@@ -5,7 +5,8 @@
 
 <h1>Add page</h1>
 <div class="col-sm-6">
-<form action="add" method=POST>
+<form action="add" method="POST">
+    @csrf
     <div class="mb-3">
       <label >Name:</label>
       <input type="text" name="name">
