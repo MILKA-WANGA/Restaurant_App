@@ -11,4 +11,8 @@ class Hotel extends Controller
     {
         return view("Home");
     }
+    function list()
+    {
+        return view("list");
+    }
 }
