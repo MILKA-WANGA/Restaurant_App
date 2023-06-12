@@ -15,6 +15,6 @@ class Hotel extends Controller
     function list()
     {
         $data=Restaurant::all();
-        return view('list',["list"=>$data]);
+        return view('list',["data"=>$data]);
     }
 }

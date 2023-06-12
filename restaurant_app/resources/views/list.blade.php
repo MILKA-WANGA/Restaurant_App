@@ -29,8 +29,8 @@
             <td>{{$item->name}}</td>
             <td>{{$item->email}}</td>
             <td>{{$item->password}}</td>
-            <td>{{$item->Created at}}</td>
-            <td>{{$item->Updated at}}</td>
+            <td>{{$item->Created_at}}</td>
+            <td>{{$item->Updated_at}}</td>
         </tr>
         @endforeach
     </table>
