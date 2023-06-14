@@ -30,4 +30,16 @@ class Hotel extends Controller
         
 
      }
+     function delete($id)
+     {
+        Restaurant::find($id)->delete();
+        Session()->flash('status',"Data deleted successful");
+       return  redirect("list");
+
+     }
+
+     function edit()
+     {
+
+     }
 }
