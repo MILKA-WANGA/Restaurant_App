@@ -22,3 +22,4 @@ Route::get("/",[Hotel::class,'index']);
 Route::get("/list",[Hotel::class,'list']);
 Route::view("/add","add");
 Route::post("add",[Hotel::class,'add']);
+Route::get("/edit{id}",[Hotel::class,'edit']);
