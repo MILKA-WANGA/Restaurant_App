@@ -25,7 +25,8 @@ class Hotel extends Controller
         $data->email=$req->input('email');   
         $data->password=$req->input('password');  
         $data->save();
-       // $data->session()->flash('status',"Data added successful");
+        $data->session()->flash('status',"Data added successful");
+       return redirect('list');
         
 
      }

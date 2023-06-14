@@ -5,6 +5,13 @@
 
 <h1>Add page</h1>
 <div class="col-sm-6">
+    @if (Session::get('status'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{Session::get('status')}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+        
+    @endif
 <form action="add" method="POST">
     @csrf
     <div class="mb-3">
