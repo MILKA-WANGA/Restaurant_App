@@ -26,3 +26,4 @@ Route::post("add",[Hotel::class,'add']);
 //Route::view("edit","edit");
 Route::get('/edit/{id}',[Hotel::class,'edit']);
 //Route::delete("/delete{id}",[Hotel::class,'delete']);
+Route::post("edit",[Hotel::class,'update']);

@@ -35,6 +35,15 @@ class Hotel extends Controller
         return view("edit",["data"=>$data]);
         
      }
+     function update(Request $req)
+     {
+        $data=Restaurant::find($req->id);
+        $data->name=$req->name;
+        $data->email=$req->email;
+        $data->save();
+        return redirect('list');
+        
+     }
  }
    
 
