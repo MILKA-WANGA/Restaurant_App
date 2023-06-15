@@ -40,8 +40,17 @@ class Hotel extends Controller
         $data=Restaurant::find($req->id);
         $data->name=$req->name;
         $data->email=$req->email;
-        $data->save();
-        return redirect('list');
+        $result=$data->save();
+        if($result)
+        {  
+        
+           echo'<script>alert("Updated successful")</script>' ;
+           return redirect('list');
+        }
+        else{
+            return "Failed to update please try again";
+        }
+        
         
      }
      function deleteData($id)
