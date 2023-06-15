@@ -26,20 +26,16 @@ class Hotel extends Controller
         $data->password=$req->input('password');  
         $data->save();
         $data->session()->flash('status',"Data added successful");
-       return redirect('list');
+       return redirect('list');        
+
+     }
+     function edit($id)
+     {
+        return Restaurant::find($id);
         
-
      }
-     function delete($id)
-     {
-        Restaurant::find($id)->delete();
-        Session()->flash('status',"Data deleted successful");
-       return  redirect("list");
+ }
+   
 
-     }
+    
 
-     function edit()
-     {
-
-     }
-}
