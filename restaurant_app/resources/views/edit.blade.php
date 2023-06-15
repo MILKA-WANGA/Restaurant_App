@@ -12,8 +12,9 @@
       </div>
         
     @endif --}}
-<form action="" method="POST">
-   
+<form action="/edit" method="POST">
+  
+  {{method_field("PUT")}}
     @csrf
     <div class="mb-3">
       <label >Name:</label>
