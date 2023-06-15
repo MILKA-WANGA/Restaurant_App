@@ -44,6 +44,13 @@ class Hotel extends Controller
         return redirect('list');
         
      }
+     function deleteData($id)
+     {
+       $data=Restaurant::find($id);
+       $data->delete();
+       return redirect('list');
+
+     }
  }
    
 
