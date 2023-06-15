@@ -3,7 +3,7 @@
     
 @endsection
 
-<h1>Add page</h1>
+<h1>Edit Profile</h1>
 <div class="col-sm-6">
     {{-- @if (Session::get('status'))
     <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -17,7 +17,7 @@
     @csrf
     <div class="mb-3">
       <label >Name:</label>
-      <input type="text" name="name">
+      <input type="text" name="name" value="{{$data['name']}}">
       
     </div>
     <div>
@@ -28,12 +28,8 @@
         <input type="email" name="email" value="{{$data['name']}}">
         
       </div>
-      <div class="mb-3">
-        <label >Password:</label>
-        <input type="password" name="password" value="{{$data['password']}}">
-        
-      </div>
-  <div><button type="submit" class="btn btn-primary align-centre">Submit</button></div>
+     
+  <div><button type="submit" class="btn btn-primary align-centre">Update</button></div>
     
   </form>
   </div>

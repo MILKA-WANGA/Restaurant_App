@@ -31,7 +31,8 @@ class Hotel extends Controller
      }
      function edit($id)
      {
-        return Restaurant::find($id);
+        $data=Restaurant::find($id);
+        return view("edit",["data"=>$data]);
         
      }
  }
