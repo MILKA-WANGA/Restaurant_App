@@ -39,7 +39,7 @@
                     <ul class="navbar-nav me-auto mb-2 ms-5 ps-5 mb-lg-0  ">
                         
                         <li class="nav-item" >
-                            <a class="nav-link active tab-pane"  aria-current="page" href="#">Home</a>
+                            <a class="nav-link active tab-pane"  aria-current="page" href="/">Home</a>
                         </li>&nbsp;&nbsp;
                         <li class="nav-item">
                             <a class="nav-link" href="/about">About </a>
