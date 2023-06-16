@@ -1,7 +1,3 @@
-@extends('layout')
-@section('contents')
-    
-@endsection
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +8,11 @@
     <title>BiwamiRestaurant</title>
 </head>
 <body>
-    <h1>Welcome to Biwami Restaurant</h1>
+    @extends('layout')
+@section('contents')
+    
+@endsection
+
+    {{-- <h1 class="lead color-grey text-center mt-80%">Welcome to Biwami Restaurant</h1> --}}
 </body>
 </html>
