@@ -1,6 +1,4 @@
-<div class="container">
-    @yield('contents')
-</div>
+
 <html>
     <head>
         <title>Restaurant App</title>
@@ -9,66 +7,74 @@
        
     </head>
         <body>
-          
-          <nav class="navbar bg-light border-bottom border-bottom-dark " data-bs-theme="light">
-            <!-- Navbar content -->
-            
-            <ul class="navbar-nav me-auto mb-0 mb-lg-0 color list-group-horizontal">
-              <li class="nav-item  color-red">
-               <a href=""><i class="fa-brands fa-facebook ps-2"></i></a>
-              </li>
-              <li class="nav-item">
-                <a href=""><i class="fa-brands fa-twitter "></i></a>
-              </li>
-              <li class="nav-item">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li class="nav-item">
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-              </li>
-            </ul>
-            
-          </nav>
+            <header>
+         <div class="">
+
+          <nav class="navbar bg-light border-bottom border-bottom-light navbar-scroll " data-bs-theme="light" style="height:2.5em; padding-top:0%">
+            <ul class="navbar list-group-horizontal-lg  ">
+           <a href=""> <i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;
+           <a href=""><i class="fa-brands fa-twitter"></i></a>&nbsp;&nbsp;
+           <a href=""><i class="fa-brands fa-square-instagram"></i></a>&nbsp;&nbsp;
+           <a href=""><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp;
+          <a href=""> <i class="fa-brands fa-telegram"></i></a>
+          </ul>
+          <a class="navbar-brand" href="#" style="text-size:1.5em ;top:1.0em"><span class="lead">BiWaMi Restaurant </span> </a>
          
+            <a class="navbar-brand " href="#" >
+              <img src="restaurant_app\assets\breakfast\break2.jpg" alt="logo" width="20px" height="5px">
+            </a>
+         
+          </nav>
           
-          <nav class="navbar navbar-expand-md bg-primary " data-bs-theme="dark" >
-            <a href="#" class="brand-navbar">
-                <div class=" fw-bold text-secondary" data-bs-placement="top" title="TechBiWaMi"class="tt">
-                    <span  class=".tt"><img src="..\restaurant_app\assets\breakfast\break2.jpg" alt="" srcset="" width="50" height="50"
-                        class="rounded border border-danger ms-5">
-                    </span>
-                
-                </div>
+          <nav class="navbar  navbar-expand-sm bg-light" style="height: 2.5em;">
+            <a href="#intro" class="brand-navbar">
+               
             </a>
             <!-- Toggle button for mobile navbar -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
-            <div class="navbar collapse navbar-collapse justify-content-center text-align-center ">
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand " href="#">Resto</a>
-                   <ul class="navbar-nav me-auto mb-0 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Food</a></li>
-            <li><a class="dropdown-item" href="#"></a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Add</a>
-        </li>
-      </ul>
+            <div class="navbar collapse navbar-collapse justify-content-end text-align-center ">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">                  
+                    <ul class="navbar-nav me-auto mb-2 ms-5 ps-5 mb-lg-0  ">
+                        
+                        <li class="nav-item" >
+                            <a class="nav-link active tab-pane"  aria-current="page" href="#">Home</a>
+                        </li>&nbsp;&nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services">Services </a>
+                        </li>
+                        
+                        <li class="nav-item d-none d-md-inline">
+                            <a class="nav-link" href="/order">Order </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2 mt-3" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success mt-3 pt-1" type="submit" style="height:30px">Search</button>
+                    </form>
                 </div>
             </div>
             
         </nav>
+      </div>
+    </header>
+      <div >
+        @yield('content')
+    </div>
+      <section>
+      <div class="footer bg-color-red ">
+
+      </div>
+    </section>
+          
+       
        
           
           
