@@ -17,16 +17,21 @@
          <div class="row ms-2 bg-color-light">
             <div class="col-5">
          <img src="{{  URL('storage/assets/resto1.jpg') }}"  width="70%" height="80%"  alt="image" id="firstImage" ></div>
-         <div class="col-3 ps-0" ><h1 class="lead text-center">About Us</h1>
+         <div class="col-3 " >
+            <div class="card pt-2 ps-2">
+            <h1 class="lead text-center ">About Us</h1>
             <p>The diner is open from 6 am to 10 pm --and free parking is available behind our location at 320 Lancaster Ave, Wayne, Pennsylvania </p>
             <p class="Lead text-success">Read More </p>
         </div>
+    </div>
         <div class="col">
+            <div class="card pt-2 ps-2">
             <h1 class="lead text-center text-center">Our Mission</h1>
             <p>Our restaurant strives to become our customers’ favorite place to eat and drink.</p>
            <a href="/about"> <p class="Lead text-success text-center text-decoration-none">Read More </p></a>
         </div>
         </div>
+    </div>
     </div><br><br>
     <div class="container-fluid bg-light">
         
