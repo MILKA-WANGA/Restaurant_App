@@ -26,13 +26,62 @@
 </div>
 </body>
 <div class="container-fluid">
-    <div class="lead text-black"><h1>Meet Out Team</h1></div>
-    <div class="row">
+    <div class="lead text-black text-center"><h1>Meet Our Team</h1></div>
+    <div class="row ms-2">
         <div class="col-3">
         <div class="card">
             
-           <img src="{{URL("storage/assets/person1.avif")}}" alt="">
+           <img src="{{URL("storage/assets/person1.avif")}}" alt="Image">
+           <p class="display-6 fs-5 text-center">Veronica Nanjala</p>
+           <p class="lead text-muted text-center">Hotel Manager</p>
             </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                
+               <img src="{{URL("storage/assets/person2.avif")}}" alt="">
+               <p class="display-6 fs-5 text-center">Maryline Waithanjo</p>
+           <p class="lead text-muted text-center">Receptionist</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    
+                   <img src="{{URL("storage/assets/person3.avif")}}" alt="">
+                   <p class="display-6 fs-5 text-center">Mary Adhiambo</p>
+                   <p class="lead text-muted text-center">Concierge</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        
+                       <img src="{{URL("storage/assets/chef3.avif")}}" alt="">
+                       <p class="display-6 fs-5 text-center">Richard Ouma</p>
+                       <p class="lead text-muted text-center">Chef</p>
+                        </div>
+                    </div>
+                   
+    </div>
+</div><br><br>
+<div class="container-fluid bg-light">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+            <div class="display-4">Innovation</div>
+            <p class="lead fs-6">We offer solutions to our clients by applying the latest technologies available.This allows us to solve business problems more effectively</p>
+        </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+            <div class="display-4">Respect</div>
+            <p class="lead fs-6">The way we review our clients is one of the weAlive's defining characters.We partner up with our clients to overcome problems together</p>
+        </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+            <div class="display-4">Intrgrity</div>
+            <p class="lead fs-6">Developing close honest relationships with our clients means we are genuinely driven to see them find access.This is what brings out our bes works</p>
+        </div>
         </div>
     </div>
 </div>
