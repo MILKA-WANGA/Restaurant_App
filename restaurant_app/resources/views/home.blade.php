@@ -12,7 +12,7 @@
 <body style="background-color:rgba(197, 170, 170, 0.188)">
     <div class="container bg-color-primary">
         <div class="images">
-         <img src="{{  URL('storage/assets/resto11.jpg') }}"  width="100%" height="70%"  alt="image" id="firstImage" ></div><br><br>
+         <img src="{{  URL('storage/assets/building.jpg') }}"  width="100%" height="70%"  alt="image" id="firstImage" ></div><br><br>
         </div>
          <div class="row ms-2 bg-color-light">
             <div class="col-5">
@@ -42,6 +42,14 @@
                 All baking is done on the premises, and credit cards are accepted. We also offer a full bar menu.
                 
                 It's our honor to serve you. Welcome and enjoy! </p>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color:rgba(197, 170, 170, 0.188">
+        <div >
+            <div class="heading ft-bolder">
+                <h1>"Even though I live on The Main Line, with so many restaurants and food choices, I still want the best diner near me."</h1>
+            </div>
+            <div class="lead text-center text-muted">Drew O., Geofrey, PA</div>
         </div>
     </div>
   

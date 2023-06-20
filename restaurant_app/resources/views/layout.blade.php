@@ -67,12 +67,13 @@
     </header>
       <div >
         @yield('content')
-    </div>
-      <section>
-      <div class="footer bg-color-red ">
-
+    </div><br><br>
+     <div class="container-fluid bg-dark">
+      <div class="footer text-white pt-5 " style="height: 30%">
+        <p class="text-center  ">&copy; 2023. All Rights Reserved</p>
+        
       </div>
-    </section>
+   </div>
           
        
        
