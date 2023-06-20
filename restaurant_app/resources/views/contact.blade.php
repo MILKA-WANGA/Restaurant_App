@@ -33,12 +33,12 @@
                       <label class="email" >Email</label>
                       <input type="email" id="email">                      
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-dark ms-5 color-white">Submit</button>
                   </form>
                 </fieldset>
             </div>
         </div>
-    <h1 class="lead">Contact us</h1>
+   
     </div>
 </body>
 </html>
