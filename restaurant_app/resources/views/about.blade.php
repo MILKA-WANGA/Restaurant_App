@@ -67,20 +67,20 @@
     <div class="row">
         <div class="col-4">
             <div class="card">
-            <div class="display-4">Innovation</div>
-            <p class="lead fs-6">We offer solutions to our clients by applying the latest technologies available.This allows us to solve business problems more effectively</p>
+            <div class="text-dark text-center">Innovation</div>
+            <p class="lead fs-6 ps-2">We offer solutions to our clients by applying the latest technologies available.This allows us to solve business problems more effectively</p>
         </div>
         </div>
         <div class="col-4">
             <div class="card">
-            <div class="display-4">Respect</div>
-            <p class="lead fs-6">The way we review our clients is one of the weAlive's defining characters.We partner up with our clients to overcome problems together</p>
+                <div class="text-dark text-center">Respect</div>
+            <p class="lead fs-6 ps-2">The way we review our clients is one of the webAlive's defining characters.We partner up with our clients to overcome problems together</p>
         </div>
         </div>
         <div class="col-4">
             <div class="card">
-            <div class="display-4">Intrgrity</div>
-            <p class="lead fs-6">Developing close honest relationships with our clients means we are genuinely driven to see them find access.This is what brings out our bes works</p>
+                <div class="text-dark text-center">Integrity</div>
+            <p class="lead fs-6 ps-2">Developing close honest relationships with our clients means we are genuinely driven to see them find access.This is what brings out our bes works</p>
         </div>
         </div>
     </div>
