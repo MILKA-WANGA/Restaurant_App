@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restaurantt</title>
 </head>
-<body>
+<body style="background-color:rgba(197, 170, 170, 0.188)">
     <div class="container">
         <div class="row pt-5">
             <div class="col-8">
@@ -36,6 +36,15 @@
                     <button type="submit" class="btn btn-dark ms-5 color-white">Submit</button>
                   </form>
                 </fieldset>
+            </div>
+        </div><br><br>
+        <div class="container-fluid bg-light">
+            <div class="lead text-muted pt-2">
+                <P>Email:<span class="text-primary">biwami@reesto.com<span></P>
+        
+            </div>
+            <div class="display-6 pb-2">
+                <p class="text-primary">25479093719</p>
             </div>
         </div>
    
