@@ -25,6 +25,17 @@
     </div>
 </div>
 </body>
+<div class="container-fluid">
+    <div class="lead text-black"><h1>Meet Out Team</h1></div>
+    <div class="row">
+        <div class="col-3">
+        <div class="card">
+            
+           <img src="{{URL("storage/assets/person1.avif")}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
 </html>
 
 @stop
