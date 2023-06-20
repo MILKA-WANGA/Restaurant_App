@@ -21,7 +21,7 @@
             <div class="card pt-2 ps-2">
             <h1 class="lead text-center ">About Us</h1>
             <p>The diner is open from 6 am to 10 pm --and free parking is available behind our location at 320 Lancaster Ave, Wayne, Pennsylvania </p>
-            <p class="Lead text-success">Read More </p>
+            <a href="/about"> <p class="Lead text-success text-center text-decoration-none">Read More </p></a>
         </div>
     </div>
         <div class="col">

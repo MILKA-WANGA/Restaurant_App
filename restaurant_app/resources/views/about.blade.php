@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restaurant</title>
 </head>
-<body>
+<body style="background-color:rgba(197, 170, 170, 0.188)">
     <div class="container-fluid">
     <h1 class="lead text-center pt-5" >About Us</h1><br><br>
     <div class="row">
@@ -24,7 +24,7 @@
     </div>
     </div>
 </div>
-</body>
+
 <div class="container-fluid">
     <div class="lead text-black text-center"><h1>Meet Our Team</h1></div>
     <div class="row ms-2">
@@ -85,6 +85,8 @@
         </div>
     </div>
 </div>
+
+</body>
 </html>
 
 @stop
