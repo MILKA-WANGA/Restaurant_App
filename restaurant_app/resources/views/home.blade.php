@@ -24,13 +24,13 @@
         <div class="col">
             <h1 class="lead text-center text-center">Our Mission</h1>
             <p>Our restaurant strives to become our customers’ favorite place to eat and drink.</p>
-            <p class="Lead text-success text-center">Read More </p>
+           <a href="/about"> <p class="Lead text-success text-center text-decoration-none">Read More </p></a>
         </div>
         </div>
     </div><br><br>
     <div class="container-fluid bg-light">
         
-        <div class="row ms-2 mt-5">
+        <div class="row ms-2 mt-5 pt-2">
             <div class="col-8">
          <img src="{{  URL('storage/assets/cake.webp') }}"  width="100%" height="90%"  alt="image" id="firstImage" ></div>
          <div class="col-4 ps-0" >

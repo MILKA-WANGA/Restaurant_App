@@ -64,7 +64,7 @@
     </div>
 </div><br><br>
 <div class="container-fluid bg-light">
-    <div class="row">
+    <div class="row pt-2 pb-2">
         <div class="col-4">
             <div class="card">
             <div class="text-dark text-center">Innovation</div>
