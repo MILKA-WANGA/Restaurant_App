@@ -23,7 +23,7 @@
            
                 <div class="col-3">
                     <div class="card">
-                        <p class="display-6 fs-5 text-center">Beef</p>
+                        <p class="display-6 fs-5 text-center">Stew</p>
                        <img src="{{URL("storage/assets/food/beef.jpeg")}}" alt="Image" style="border-radius: 50px">
                       
                        <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">600 </span>&nbsp;ksh.50</p>
