@@ -9,14 +9,23 @@
     <title>BiWaMi</title>
 </head>
 <body>
-    <div class="container">
-        <div class="shadow">
-            <form action="" class="p-2 m-2 bg-light">
-                <label for="email">Email:</label><br>
-                <input type="email" name="email" placeholder="example@gmail.com">
-                <label for="password">password</label>
-                <input type="password" name="password" placeholder="mtkalo123">
+    <div class="container align-items-center mt-5">
+        <div class="shadow " style="width:300px; height:250px;margin-left:30%" >
+            <h3 class="text-center text-muted text-lead">Login here</h3>
+            <center>
+            <form action="" class="p-2 m-2 bg-light "style="margin-bottom:20px;" >
+                <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="email" placeholder="example@gmail.com"><br><br>
+                <label for="password">password:</label>
+                <input type="password" name="password" placeholder="mtkalo123"><br><br>
+                <a href="/register" style="text-decoration:none;font-size:12px;">create account</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/password" style="text-decoration:none;font-size:12px;">Forgot password</a><br><br>
+                <button class="btn btn-secondary " style="width:70px;height:35px; text-size:4px" type="submit">submit</button>
+
+
             </form>
+        </center>
+       
         </div>
     </div>
 </body>

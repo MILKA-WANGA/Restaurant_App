@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restaurant</title>
 </head>
-<body style="background-color:rgba(197, 170, 170, 0.188)">
+<body >
     <div class="container bg-color-primary">
         <div class="images">
          <img src="{{  URL('storage/assets/building.jpg') }}"  width="100%" height="70%"  alt="image" id="firstImage" ></div><br><br>
@@ -37,7 +37,7 @@
         
         <div class="row ms-2 mt-5 pt-2">
             <div class="col-8">
-         <img src="{{  URL('storage/assets/cake.webp') }}"  width="100%" height="90%"  alt="image" id="firstImage" ></div>
+         <img src="{{  URL('storage/assets/cake1.png') }}"  width="100%" height="90%"  alt="image" id="firstImage" ></div>
          <div class="col-4 ps-0" >
             <p>Superior service, personalized attention
                 We're proud to offer the highest quality, freshest diner food on The Main Line. From our family to yours, we put lots of love and careful attention in each item. We hope you enjoy our work as much as we enjoy bringing it to you.

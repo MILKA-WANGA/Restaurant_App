@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
        
     </head>
-        <body>
+        <body style="background-color:rgba(197, 170, 170, 0.188)">
             <header>
          <div class="">
 
@@ -17,8 +17,11 @@
            <a href=""><i class="fa-brands fa-square-instagram"></i></a>&nbsp;&nbsp;
            <a href=""><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp;
           <a href=""> <i class="fa-brands fa-telegram"></i></a>
-          </ul>
-          <a class="navbar-brand" href="#" style="text-size:1.5em ;top:1.0em"><span class="lead">BiWaMi Restaurant </span> </a>
+          </ul>&nbsp;&nbsp;
+          <a class="navbar-brand" href="#" style="text-size:1.5em ;top:1.0em"><span class="lead">BiWaMi Restaurant </span> </a>&nbsp;&nbsp;&nbsp;&nbsp;
+         <span><a href="/register" style="text-decoration:none;font-size:12px;">Sign up</a>&nbsp;
+          <a href="/login" style="text-decoration:none;font-size:12px;">Login</a></span> 
+          
          
             <a class="navbar-brand " href="#" >
               <img src="restaurant_app\assets\breakfast\break2.jpg" alt="logo" width="20px" height="5px">
