@@ -18,6 +18,7 @@
                <img src="{{URL("storage/assets/breakfast/braek7.jpg")}}" alt="Image" style="border-radius: 50px">
               
                <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">120 </span>&nbsp;ksh.30</p>
+               <a href="view"><span >view</span></a>
             </div>
             </div>
            
@@ -28,7 +29,7 @@
                       
                        <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">600 </span>&nbsp;ksh.50</p>
                     </div>
-                    </div>
+                </div>
                     <div class="col-3">
                         <div class="card">
                             <p class="display-6 fs-5 text-center">Fish</p>
@@ -40,11 +41,11 @@
                         <div class="col-3">
                             <div class="card">
                                 <p class="display-6 fs-5 text-center">Chapati</p>
-                               <img src="{{URL("storage/assets/food/food1.jpg")}}" alt="Image" style="border-radius: 50px">
+                               <img src="{{URL("storage/assets/food/food2.jpg")}}" alt="Image" style="border-radius: 50px">
                               
                                <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">800 </span>&nbsp;ksh.50</p>
                             </div>
-                            </div>
+                     </div>
                        
         
     </div><br><br>
