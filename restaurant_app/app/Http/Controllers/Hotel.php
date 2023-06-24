@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Restaurant;
+use App\Models\Member;
+
 
 class Hotel extends Controller
 {
@@ -14,7 +15,7 @@ class Hotel extends Controller
     }
     function register()
     {
-        
+
     }
 //     function list()
 //     {
