@@ -13,9 +13,11 @@ class Hotel extends Controller
     {
         return view("Home");
     }
-    function register()
+    function register(Request $req)
     {
-
+      // return  $req->input();
+     $member =new Member;
+     $member->name=$req->input('name');
     }
 //     function list()
 //     {
