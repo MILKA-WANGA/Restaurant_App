@@ -27,13 +27,13 @@
 
 <div class="container-fluid">
     <div class="lead text-black text-center"><h1>Meet Our Team</h1></div>
-    <div class="row ms-2">
+    <div class="row ms-2 g-3">
         <div class="col-3">
         <div class="card">
             
            <img src="{{URL("storage/assets/person1.avif")}}" alt="Image">
            <p class="display-6 fs-5 text-center">Veronica Nanjala</p>
-           <p class="lead text-muted text-center">Hotel Manager</p>
+           <p class="lead text-muted text-center fs-6">Hotel Manager</p>
             </div>
         </div>
         <div class="col-3">
@@ -41,7 +41,7 @@
                 
                <img src="{{URL("storage/assets/person2.avif")}}" alt="">
                <p class="display-6 fs-5 text-center">Maryline Waithanjo</p>
-           <p class="lead text-muted text-center">Receptionist</p>
+           <p class="lead text-muted text-center fs-6">Receptionist</p>
                 </div>
             </div>
             <div class="col-3">
@@ -49,15 +49,15 @@
                     
                    <img src="{{URL("storage/assets/person3.avif")}}" alt="">
                    <p class="display-6 fs-5 text-center">Mary Adhiambo</p>
-                   <p class="lead text-muted text-center">Concierge</p>
+                   <p class="lead text-muted text-center fs-6">Concierge</p>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
                         
-                       <img src="{{URL("storage/assets/chef3.avif")}}" alt="">
+                       <img src="{{URL("storage/assets/chef1.avif")}}" alt="" width="170px" height="255px">
                        <p class="display-6 fs-5 text-center">Richard Ouma</p>
-                       <p class="lead text-muted text-center">Chef</p>
+                       <p class="lead text-muted text-center fs-6">Chef</p>
                         </div>
                     </div>
                    
