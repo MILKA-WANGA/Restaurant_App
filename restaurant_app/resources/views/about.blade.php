@@ -14,7 +14,7 @@
     <h1 class="lead text-center pt-5" >About Us</h1><br><br>
     <div class="row">
         <div class="col-6">
-            <img src="{{URL("storage/assets/building.jpg")}}" alt="image" width="90%" height="90%" >
+              <img src="{{URL("storage/assets/resto/iage6.jpg")}}"  alt="image" width="90%" height="90%" >
         </div>
         <div class="col-6">
         <div class="display-2 fs-8">Our Vision</div>
