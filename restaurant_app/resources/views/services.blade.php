@@ -53,8 +53,8 @@
         <div class="row ms-2">
             <div class="col-4">
             <div class="card">
-                <p class="display-6 fs-5 text-center">Breakfast</p>
-               <img src="{{URL("storage/assets/breakfast/braek7.jpg")}}" alt="Image" style="border-radius: 50px">
+                <p class="display-6 fs-5 text-center">Actors</p>
+               <img src="{{URL("storage\assets\activities\acting.jpg")}}" alt="Image" style="border-radius: 50px">
               
                <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">120 </span>&nbsp;ksh.30</p>
                <a href="view"><span >view</span></a>
