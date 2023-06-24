@@ -18,6 +18,7 @@ class Hotel extends Controller
       // return  $req->input();
      $member =new Member;
      $member->name=$req->input('name');
+     $member->save();
     }
 //     function list()
 //     {
