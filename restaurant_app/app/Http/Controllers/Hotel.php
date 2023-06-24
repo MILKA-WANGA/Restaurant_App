@@ -12,6 +12,10 @@ class Hotel extends Controller
     {
         return view("Home");
     }
+    function register()
+    {
+        
+    }
 //     function list()
 //     {
 //         $data=Restaurant::all();
