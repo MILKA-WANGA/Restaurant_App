@@ -41,7 +41,7 @@
                         <div class="col-3">
                             <div class="card">
                                 <p class="display-6 fs-5 text-center">Chapati</p>
-                               <img src="{{URL("storage/assets/food/food2.jpg")}}" alt="Image" style="border-radius: 50px">
+                               <img src="{{URL("storage/assets/food/food2.jpg")}}" alt="Image" style="border-radius: 50px" height="95px">
                               
                                <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">800 </span>&nbsp;ksh.50</p>
                             </div>
@@ -72,7 +72,7 @@
                     <div class="col-4">
                         <div class="card">
                             <p class="display-6 fs-5 text-center">Fish</p>
-                           <img src="{{URL("storage/assets/food/food13.webp")}}" alt="Image" style="border-radius: 50px">
+                           <img src="{{URL("storage/assets/food/food13.webp")}}" alt="Image" style="border-radius: 50px" >
                           
                            <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">800 </span>&nbsp;ksh.50</p>
                         </div>
