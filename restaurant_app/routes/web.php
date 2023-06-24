@@ -32,3 +32,4 @@ Route::view("/contact","contact");
 Route::view("/services","services");
 Route::view("/order","order");
 Route::view("/login","login");
+Route::view("/signUp","register");

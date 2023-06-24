@@ -19,9 +19,14 @@
           <a href=""> <i class="fa-brands fa-telegram"></i></a>
           </ul>&nbsp;&nbsp;
           <a class="navbar-brand" href="#" style="text-size:1.5em ;top:1.0em"><span class="lead">BiWaMi Restaurant </span> </a>&nbsp;&nbsp;&nbsp;&nbsp;
-         <span><a href="#register" style="text-decoration:none;font-size:12px;text-color:rgba(129, 9, 9, 0.188)">Sign up</a>&nbsp;
-          <a href="#login" style="text-decoration:none;font-size:12px;">Login</a></span> 
+         <span><a href="/register" id="register" onclick="loadRegister"  style="text-decoration:none;font-size:12px;text-color:rgba(129, 9, 9, 0.188)">Sign up</a>&nbsp;
+         <script>
+         
+
+         </script>
           
+          <a href="/login" id="login" style="text-decoration:none;font-size:12px;">Login</a></span> 
+         
          
             <a class="navbar-brand " href="#" >
               <img src="restaurant_app\assets\breakfast\break2.jpg" alt="logo" width="20px" height="5px">
@@ -85,5 +90,6 @@
           
          
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
-      </body>
+          <script src="resources/js/app.js"></script>
+        </body>
 </html>

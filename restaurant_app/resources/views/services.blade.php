@@ -54,9 +54,9 @@
             <div class="col-3">
                 <div class="card">
                     <p class="text-muted text-center">Snacks and beverages</p>
-                   <img src="{{URL("storage\assets\activities\istockphoto-1248504201-612x612.jpg")}}" alt="Image" >
+                   <img src="{{URL("storage\assets\breakfast\break4.jpg")}}" alt="Image" >
                   
-                   <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">800 </span>&nbsp;ksh.50</p>
+                   <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">250 </span>&nbsp;ksh.50</p>
                 </div>
                 </div>
             <div class="col-3">
@@ -88,10 +88,10 @@
 
                        
     </div><br>
- <div class="container-fluid">
-        <div class="bg-light" style="width:800px">
+ <div class="container">
+        <div class="bg-light" >
             <p class="lead text-muted">Renting ground for events</p>
-            <img src="{{URL("storage/assets/resto/iage6.jpg")}}" alt="image">
+            {{-- <img src="{{URL("storage/assets/resto/iage6.jpg")}}" alt="image"> --}}
             
         </div>
     </div>
