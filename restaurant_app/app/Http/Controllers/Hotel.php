@@ -15,12 +15,17 @@ class Hotel extends Controller
     }
     function register(Request $req)
     {
-      // return  $req->input();
-     $member =new Member;
-     $member->name=$req->input('name');
-     $member->save();
+      return $req->input();
+     
+      
+    //  $member =new Member;
+    //  $member->name=$req->input('name');
+    //  $member->save();
     }
-//     function list()
+    function login()
+    {
+      
+    }
 //     {
 //         $data=Restaurant::all();
 //         return view('list',["data"=>$data]);

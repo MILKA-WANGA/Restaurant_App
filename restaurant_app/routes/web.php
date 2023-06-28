@@ -33,4 +33,4 @@ Route::view("/services","services");
 Route::view("/order","order");
 Route::view("/login","login");
 Route::view("/signUp","register");
-Route::get("/register",[Hotel::class,'register']);
+Route::post("/register",[Hotel::class,'register']);
