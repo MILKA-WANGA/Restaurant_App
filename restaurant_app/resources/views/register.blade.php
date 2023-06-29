@@ -9,7 +9,7 @@
     <div class="shadow " style="width:500px; height:380px;margin-left:20%" >
         <h3 class="text-center text-muted text-lead">SignUp</h3>
         <center>
-        <form action="register"  method="POST" id="form2" class="p-2 m-2 bg-light "style="margin-bottom:10px;" >
+        <form action="/register"  method="POST" id="form2" class="p-2 m-2 bg-light "style="margin-bottom:10px;" >
             <label for="name">Full Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" name="name" placeholder="John Wiyaki"><br><br>
             <label for="phone">Contact:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
