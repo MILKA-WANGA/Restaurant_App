@@ -32,7 +32,7 @@ class Hotel extends Controller
 //     }
 //      function  add(Request $req)
 //      {
-//         // return $req->input();
+//         return $req->input();
 //         $data=new Restaurant;
 //         $data->name=$req->input('name'); 
 //         $data->email=$req->input('email');   
