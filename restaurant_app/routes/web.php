@@ -34,4 +34,4 @@ Route::view("/order","order");
 Route::view("/login","login");
 Route::view("/register","register");
 Route::post("register",[Hotel::class,'register']);
-Route::view("password,password");
+Route::view("/password","password");
