@@ -15,13 +15,22 @@ class Hotel extends Controller
     }
     function register(Request $req)
     {
-      return $req->input();
-     
-      
-    //  $member =new Member;
-    //  $member->name=$req->input('name');
-    //  $member->save();
-    }
+      //return $req->input();
+      $member=new Member;
+      $member->name=$req->input('name');
+      $member->contact=$req->input('phone');
+      $member->email=$req->input('email');
+      $member->password=$req->input('password');
+      $member->created_at;
+      $member->updated_at;
+      $member->save();
+      return "Registrartion Succesful";
+
+    //check if registererd or not
+    
+    }      
+    
+    
     function login()
     {
       
