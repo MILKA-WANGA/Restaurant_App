@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
+use Illuminate\Foundation\Validation;
+
+
 
 
 class Hotel extends Controller
@@ -24,7 +27,18 @@ class Hotel extends Controller
       $member->created_at;
       $member->updated_at;
       $member->save();
-      return "Registrartion Succesful";
+      //Validate data
+      
+      $req->validate([
+        'name'=>'required',
+        'phone'=>'required ',
+        'email'=>'required || email || unique',
+        'password'=>'required || min:8 || max:12'
+
+      ]);
+
+
+      //return "Registrartion Succesful";
 
     //check if registererd or not
     
