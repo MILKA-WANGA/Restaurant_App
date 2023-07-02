@@ -18,17 +18,7 @@ class Hotel extends Controller
     function register()
     {
       return view('register');
-      // //return $req->input();
-      // $member=new Member;
-      // $member->name=$req->input('name');
-      // $member->contact=$req->input('phone');
-      // $member->email=$req->input('email');
-      // $member->password=$req->input('password');
-      // $member->created_at;
-      // $member->updated_at;
-      // $member->save();
-      // return "Registrartion Succesful";
-      // //Validate data
+     
       
       
       
@@ -47,6 +37,7 @@ class Hotel extends Controller
     
     function registerUser(Request $req)
     {
+        //Validate data
       //return "Value posted";
       $req->validate([
         'name'=>'required',
@@ -55,7 +46,26 @@ class Hotel extends Controller
          'password'=>'required | min:5 | max:12',
          'comfirm'=>'required | min:5 | max:12 '
         ]);
-      //   return $req->input();
+         // //return $req->input();
+      $member=new Member();
+      $member->name=$req->name;
+      $member->contact=$req->phone;
+      $member->email=$req->email;
+      $member->password=$req->password;
+      $member->created_at;
+      $member->updated_at;
+      $result=$member->save();
+      //Check if data is posted in database
+      if($result)
+      {
+        return back()->with('success', 'You have Registered Successful');
+      }
+      else{
+        return back()->with('fail','Registration failed please try again');
+      }
+     
+     
+      
     }
 //     {
 //         $data=Restaurant::all();
