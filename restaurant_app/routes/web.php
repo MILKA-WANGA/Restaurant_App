@@ -33,7 +33,7 @@ Route::view("/services","services");
 Route::view("/order","order");
 Route::get("/login",[Hotel::class,'login']);
 Route::get("/register",[Hotel::class,'register']);
-Route::post("register",[Hotel::class,'register']);
+Route::post("register-user",[Hotel::class,'registerUser'])->name("register-user");
 //Route::get("register-user",[Hotel::class,'registerUser']);
 
 Route::view("/password","password");

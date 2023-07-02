@@ -47,14 +47,15 @@ class Hotel extends Controller
     
     function registerUser(Request $req)
     {
-      $req->validate([
-        'name'=>'required',
-        'phone'=>'required',
-        'email'=>'required | unique',
-         'password'=>'required | min:5 | max:12',
-         'comfirm'=>'required | min:5 | max:12 '
-        ]);
-        return $req->input();
+      return "Value posted";
+      // $req->validate([
+      //   'name'=>'required',
+      //   'phone'=>'required',
+      //   'email'=>'required | unique',
+      //    'password'=>'required | min:5 | max:12',
+      //    'comfirm'=>'required | min:5 | max:12 '
+      //   ]);
+      //   return $req->input();
     }
 //     {
 //         $data=Restaurant::all();

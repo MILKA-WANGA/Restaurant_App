@@ -9,7 +9,7 @@
     <div class="shadow " style="width:500px; height:380px;margin-left:20%" >
         <h3 class="text-center text-muted text-lead">SignUp</h3>
         <center>
-        <form class="p-2 m-2 bg-light  " action="/register"  method="POST" id="form_2" style="margin-bottom:10px;" >
+        <form class="p-2 m-2 bg-light  " action="{{route('register-user')}}"  method="POST" id="form_2" style="margin-bottom:10px;" >
             @csrf
             <div class="form-group">
             <label for="name">Full Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
