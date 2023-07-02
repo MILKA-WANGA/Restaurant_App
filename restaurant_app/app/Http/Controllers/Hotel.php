@@ -51,7 +51,7 @@ class Hotel extends Controller
       $req->validate([
         'name'=>'required',
         'phone'=>'required',
-        'email'=>'required | unique',
+        'email'=>'required |email | unique:members',
          'password'=>'required | min:5 | max:12',
          'comfirm'=>'required | min:5 | max:12 '
         ]);
