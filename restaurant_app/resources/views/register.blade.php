@@ -9,7 +9,7 @@
     <div class="shadow " style="width:500px; height:380px;margin-left:20%" >
         <h3 class="text-center text-muted text-lead">SignUp</h3>
         <center>
-        <form class="p-2 m-2 bg-light  " action="{{route('register-user')}}"  method="POST" id="form_2" style="margin-bottom:10px;" >
+        <form  action="register-user"  method="POST" class="p-2 m-2 bg-light"  id="form_2" style="margin-bottom:10px;" >
             @if (Session::has('success'))
              <div class="alert alert-success">{{Success::get('success')}}</div>
             @endif
@@ -26,8 +26,8 @@
         </div><br>
             <div class="form-group">
             <label for="phone">Contact:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input class="form-control"  type="text" name="phone" placeholder="e.g +2547000000" value="{{old('phone')}}"><br><br>
-            <span class="text-danger">@error('phone'){{$message}}@enderror</span>  
+            <input class="form-control"  type="text" name="contact" placeholder="e.g +2547000000" value="{{old('contact')}}"><br><br>
+            <span class="text-danger">@error('contact'){{$message}}@enderror</span>  
         </div>
            
             <div class="form-group">
@@ -36,7 +36,7 @@
             <span class="text-danger">@error('email'){{$message}}@enderror</span>  
         </div>
             <div class="form-group">
-            <label for="password">Pasword:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            <input class="form-control" type="password" name="password" placeholder="mtkalo123" value="{{old('password')}}"><br><br>
            <span class="text-danger">@error('password'){{$message}}@enderror</span>  
         </div>

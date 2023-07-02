@@ -15,74 +15,68 @@ class Hotel extends Controller
     {
         return view("Home");
     }
-    function register()
-    {
-      return view('register');
+    // function register()
+    // {
+    //   return view('register');
      
       
       
       
 
    
-    //check if registererd or not
+    // // //check if registererd or not
     
-    }
-    public function login()
-    {
-      return view('login');
-    }
-
+    // }
+  
     
     
     
-    function registerUser(Request $req)
+    function register(Request $req)
     {
         //Validate data
-      //return "Value posted";
+          
+      $data=new Member;
+      $data->name=$req->input('name');
+      $data->contact=$req->input('contact');
+      $data->email=$req->input('email');
+      $data->password=$req->input('password');
+      $data->created_at;
+      $data->updated_at;
+      $data->save();
+      
       $req->validate([
         'name'=>'required',
-        'phone'=>'required',
-        'email'=>'required |email | unique:members',
-         'password'=>'required | min:5 | max:12',
-         'comfirm'=>'required | min:5 | max:12 '
+        'contact'=>'required',
+        'email'=>'required |email ',
+        'password'=>'required | min:5 | max:12',
+        'comfirm'=>'required | min:5 | max:12 '
         ]);
-         // //return $req->input();
-      $member=new Member();
-      $member->name=$req->name;
-      $member->contact=$req->phone;
-      $member->email=$req->email;
-      $member->password=$req->password;
-      $member->created_at;
-      $member->updated_at;
-      $result=$member->save();
-      //Check if data is posted in database
-      if($result)
-      {
-        return back()->with('success', 'You have Registered Successful');
-      }
-      else{
-        return back()->with('fail','Registration failed please try again');
-      }
-     
+       
+      
+      
+ 
+    //  // Check if data is posted in database
+    //   if($result)
+    //   {
+    //     return back()->with('success', 'You have Registered Successful');
+    //   }
+    //   else{
+    //     return back()->with('fail','Registration failed please try again');
+    //   }  
      
       
     }
+    // public function login()
+    // {
+    //   return view('login');
+    // }
+
+  }
 //     {
 //         $data=Restaurant::all();
 //         return view('list',["data"=>$data]);
 //     }
-//      function  add(Request $req)
-//      {
-//         return $req->input();
-//         $data=new Restaurant;
-//         $data->name=$req->input('name'); 
-//         $data->email=$req->input('email');   
-//         $data->password=$req->input('password');  
-//         $data->save();
-//         $data->session()->flash('status',"Data added successful");
-//        return redirect('list');        
-
-//      }
+//    
 //      function edit($id)
 //      {
 //         $data=Restaurant::find($id);
@@ -115,7 +109,7 @@ class Hotel extends Controller
 
 //      }
 // 
- }
+ 
    
 
     
