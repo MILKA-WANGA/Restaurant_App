@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
-use Illuminate\Foundation\Validation;
 
 
 
@@ -16,38 +15,46 @@ class Hotel extends Controller
     {
         return view("Home");
     }
-    function register(Request $req)
+    function register()
     {
-      //return $req->input();
-      $member=new Member;
-      $member->name=$req->input('name');
-      $member->contact=$req->input('phone');
-      $member->email=$req->input('email');
-      $member->password=$req->input('password');
-      $member->created_at;
-      $member->updated_at;
-      $member->save();
-      //Validate data
+      return view('register');
+      // //return $req->input();
+      // $member=new Member;
+      // $member->name=$req->input('name');
+      // $member->contact=$req->input('phone');
+      // $member->email=$req->input('email');
+      // $member->password=$req->input('password');
+      // $member->created_at;
+      // $member->updated_at;
+      // $member->save();
+      // return "Registrartion Succesful";
+      // //Validate data
       
-      $req->validate([
-        'name'=>'required',
-        'phone'=>'required ',
-        'email'=>'required || email || unique',
-        'password'=>'required || min:8 || max:12'
+      
+      
 
-      ]);
-
-
-      //return "Registrartion Succesful";
-
+   
     //check if registererd or not
     
-    }      
-    
-    
-    function login()
+    }
+    public function login()
     {
-      
+      return view('login');
+    }
+
+    
+    
+    
+    function registerUser(Request $req)
+    {
+      $req->validate([
+        'name'=>'required',
+        'phone'=>'required',
+        'email'=>'required | unique',
+         'password'=>'required | min:5 | max:12',
+         'comfirm'=>'required | min:5 | max:12 '
+        ]);
+        return $req->input();
     }
 //     {
 //         $data=Restaurant::all();

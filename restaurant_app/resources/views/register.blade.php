@@ -13,14 +13,14 @@
             @csrf
             <div class="form-group">
             <label for="name">Full Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input class="form-control" type="text" name="name" placeholder="John Wiyaki" value="{{old('name')}}"><br><br>
-            <span class="text-danger">@error('name'){{$message}}@enderror</span>
-                
+            <input class="form-control" type="text" name="name" placeholder="John Wiyaki" value="{{old('name')}}">
+            <span class="text-danger">@error('name'){{$message}}@enderror</span>        
             
         </div>
             <div class="form-group">
             <label for="phone">Contact:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input class="form-control"  type="text" name="phone" placeholder="e.g +2547000000"><br><br></div>
+           
             <div class="form-group">
             <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         
             <input class="form-control" type="email" name="email" placeholder="example@gmail.com"><br><br></div>
@@ -29,7 +29,7 @@
            <input class="form-control" type="password" name="password" placeholder="mtkalo123"><br><br></div>
            <div class="form-group">
            <label for="password">Confirm Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-           <input class="form-control" type="password" name="Confirm" placeholder="mtkalo123"><br><br></div>
+           <input class="form-control" type="password" name="confirm" placeholder="mtkalo123"><br><br></div>
             <div class="form-group">
             <button class="btn  btn-block btn-secondary " style="text-size:4px" type="submit">SignUp</button></div>
             </div>

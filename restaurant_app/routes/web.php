@@ -31,8 +31,9 @@ Route::view("/about","about");
 Route::view("/contact","contact");
 Route::view("/services","services");
 Route::view("/order","order");
-Route::view("/login","login");
-Route::view("/register","register");
-Route::post("register",[Hotel::class,'register'])->name('register');
-Route::get("register-user",[Hotel::class,'register-user']);
+Route::get("/login",[Hotel::class,'login']);
+Route::get("/register",[Hotel::class,'register']);
+Route::post("register",[Hotel::class,'register']);
+//Route::get("register-user",[Hotel::class,'registerUser']);
+
 Route::view("/password","password");
