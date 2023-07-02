@@ -31,7 +31,7 @@ Route::view("/about","about");
 Route::view("/contact","contact");
 Route::view("/services","services");
 Route::view("/order","order");
-//Route::get("/login",[Hotel::class,'login']);
+Route::get("/login",[Hotel::class,'login']);
 Route::get("/register",[Hotel::class,'register']);
 Route::post("/register-user",[Hotel::class,'registerUser']);
 //Route::post("/register-user",[Hotel::class,'registerUser']);

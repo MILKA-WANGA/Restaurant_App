@@ -15,45 +15,42 @@ class Hotel extends Controller
     {
         return view("Home");
     }
-    // function register()
-    // {
-    //   return view('register');
+    function register()
+    {
+      return view('register');
      
       
       
       
 
    
-    // // //check if registererd or not
+    // //check if registererd or not
     
-    // }
+    }
   
     
     
     
-    function register(Request $req)
+    function registerUser(Request $req)
     {
         //Validate data
-          
+        $req->validate([
+          'name'=>'required',
+          'contact'=>'required',
+          'email'=>'required |email ',
+          'password'=>'required | min:5 | max:12',
+          'comfirm'=>'required | min:5 | max:12 '
+          ]);
+         
+       
       $data=new Member;
       $data->name=$req->input('name');
       $data->contact=$req->input('contact');
       $data->email=$req->input('email');
       $data->password=$req->input('password');
       $data->created_at;
-      $data->updated_at;
-      $data->save();
-      
-      $req->validate([
-        'name'=>'required',
-        'contact'=>'required',
-        'email'=>'required |email ',
-        'password'=>'required | min:5 | max:12',
-        'comfirm'=>'required | min:5 | max:12 '
-        ]);
-       
-      
-      
+      $data->updated_at;        
+      $data->save();    
  
     //  // Check if data is posted in database
     //   if($result)
@@ -66,10 +63,10 @@ class Hotel extends Controller
      
       
     }
-    // public function login()
-    // {
-    //   return view('login');
-    // }
+    public function login()
+    {
+      return view('login');
+    }
 
   }
 //     {

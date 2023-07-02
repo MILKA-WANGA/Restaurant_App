@@ -11,7 +11,7 @@
 <body>
     <div class="container align-items-center mt-5">
         <div class="shadow " style="width:300px; height:250px;margin-left:30%" >
-            <h3 class="text-center text-muted text-lead">Login here</h3>
+            <h3 class="text-center text-muted text-lead">Enter your email</h3>
             <center>
             <form action="/password"  method="POST"  id="form1" class="p-2 m-2 bg-light "style="margin-bottom:20px;" >
                 <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
