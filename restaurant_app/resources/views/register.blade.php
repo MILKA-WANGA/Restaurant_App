@@ -20,29 +20,29 @@
             @csrf
             <div class="form-group">
             <label for="name">Full Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input class="form-control" type="text" name="name" placeholder="John Wiyaki" value="{{old('name')}}">
+            <input type="text" name="name" placeholder="John Wiyaki" value="{{old('name')}}" >
             <span class="text-danger">@error('name'){{$message}}@enderror</span>   
             
         </div><br>
             <div class="form-group">
             <label for="phone">Contact:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input class="form-control"  type="text" name="contact" placeholder="e.g +2547000000" value="{{old('contact')}}"><br><br>
+            <input   type="text" name="contact" placeholder="e.g +2547000000" value="{{old('contact')}}"><br><br>
             <span class="text-danger">@error('contact'){{$message}}@enderror</span>  
         </div>
            
             <div class="form-group">
             <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         
-            <input class="form-control" type="email" name="email" placeholder="example@gmail.com" value="{{old('email')}}"><br><br>
+            <input  type="email" name="email" placeholder="example@gmail.com" value="{{old('email')}}"><br><br>
             <span class="text-danger">@error('email'){{$message}}@enderror</span>  
         </div>
             <div class="form-group">
-            <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <input class="form-control" type="password" name="password" placeholder="mtkalo123" value="{{old('password')}}"><br><br>
+            <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <input type="password" name="password" placeholder="mtkalo123" value="{{old('password')}}"><br><br>
            <span class="text-danger">@error('password'){{$message}}@enderror</span>  
         </div>
            <div class="form-group">
            <label for="password">Confirm Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-           <input class="form-control" type="password" name="confirm" placeholder="mtkalo123" value="{{old('confirm')}}"><br><br>
+           <input  type="password" name="confirm" placeholder="mtkalo123" value="{{old('confirm')}}"><br><br>
            <span class="text-danger">@error('confirm'){{$message}}@enderror</span>  
         </div>
             <div class="form-group">

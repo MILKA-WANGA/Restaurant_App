@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
-
+use Hash;
 
 
 
@@ -38,7 +38,7 @@ class Hotel extends Controller
           'name'=>'required',
           'contact'=>'required',
           'email'=>'required |email ',
-          'password'=>'required | min:5 | max:12',
+          'password'=>'required | min:5 | max:12 ',
           'comfirm'=>'required | min:5 | max:12 '
           ]);
          
@@ -52,7 +52,7 @@ class Hotel extends Controller
       $data->updated_at;        
       $data->save();    
  
-    //  // Check if data is posted in database
+     // Check if data is posted in database
     //   if($result)
     //   {
     //     return back()->with('success', 'You have Registered Successful');
