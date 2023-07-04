@@ -19,7 +19,7 @@
           <a href=""> <i class="fa-brands fa-telegram"></i></a>
           </ul>&nbsp;&nbsp;
           <a class="navbar-brand" href="#" style="text-size:1.5em ;top:1.0em"><span class="lead">BiWaMi Restaurant </span> </a>&nbsp;&nbsp;&nbsp;&nbsp;
-         <span><a href="http://127.0.0.1:8000/register" id="register"   style="text-decoration:none;font-size:12px;text-color:rgba(129, 9, 9, 0.188)">Sign up</a>&nbsp;
+         <span><a href="/register" id="register"   style="text-decoration:none;font-size:12px;text-color:rgba(129, 9, 9, 0.188)">Sign up</a>&nbsp;
         
           
           <a href="/login" id="login" style="text-decoration:none;font-size:12px;">Login</a></span> 
