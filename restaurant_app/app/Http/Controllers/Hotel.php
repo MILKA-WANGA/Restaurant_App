@@ -50,16 +50,16 @@ class Hotel extends Controller
       $data->password=$req->input('password');
       $data->created_at;
       $data->updated_at;        
-      $data->save();    
+       $result=$data->save();    
  
-     // Check if data is posted in database
-    //   if($result)
-    //   {
-    //     return back()->with('success', 'You have Registered Successful');
-    //   }
-    //   else{
-    //     return back()->with('fail','Registration failed please try again');
-    //   }  
+     //Check if data is posted in database
+      if($result)
+      {
+        return back()->with('success', 'You have Registered Successful');
+      }
+      else{
+        return back()->with('fail','Registration failed please try again');
+      }  
      
       
     }
