@@ -10,11 +10,11 @@
         <h3 class="text-center text-muted text-lead">SignUp</h3>
         <center>
         <form  action="register-user"  method="POST" class="p-2 m-2 bg-light"  id="form_2" style="margin-bottom:10px;" >
-            @if (Session::has('success'))
-             <div class="alert alert-success">{{Success::get('success')}}</div>
+            @if (Session::has('Success'))
+             <div class="success alert-success">{{Success::get('success')}}</div>
             @endif
-            @if (Session::has('fail'))
-            <div class="alert alert-danger">{{Success::get('fail')}}</div>
+            @if (Session::has('Fail'))
+            <div class="success alert-danger">{{Success::get('fail')}}</div>
            @endif
 
             @csrf
