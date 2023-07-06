@@ -13,7 +13,7 @@
         <div class="shadow " style="width:300px; height:300px;margin-left:30%" >
             <h3 class="text-center text-muted text-lead">Login here</h3>
             <center>
-            <form action="login-user" id="form1" class="p-2 m-2 bg-light "style="margin-bottom:20px;" >
+            <form action="login-user" method="POST" id="form1" class="p-2 m-2 bg-light "style="margin-bottom:20px;" >
                 
                 <form  action="register-user"  method="POST" class="p-2 m-2 bg-light"  id="form_2" style="margin-bottom:10px;" >
                     @if (Session::has('success'))
