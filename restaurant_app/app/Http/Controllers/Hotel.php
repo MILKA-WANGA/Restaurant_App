@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Member;
 use Hash;
-use GrahamCampbell\ResultType\Success;
+
 
 
 
@@ -38,7 +38,7 @@ class Hotel extends Controller
         // $req->validate([
         //   'name'=>'required',
         //   'contact'=>'required',
-        //   'email'=>'required |email ',
+        //   'email'=>'required |email|unique:members ',
         //   'password'=>'required | min:5 | max:12 ',
         //   'comfirm'=>'required | min:5 | max:12 '
         //   ]);
@@ -52,14 +52,15 @@ class Hotel extends Controller
       $data->created_at;
       $data->updated_at;        
        $result=$data->save();    
+
  
      //Check if data is posted in database
       if($result)
       {
-        return back()->with('Success', 'You have Registered Successful');
+        return back()->with('success', 'You have Registered Successful');
       }
       else{
-        return back()->with('Fail','Registration failed please try again');
+        return back()->with('fail','Registration failed please try again');
       }  
      
       
