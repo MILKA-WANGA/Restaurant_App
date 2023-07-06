@@ -72,6 +72,23 @@ class Hotel extends Controller
     public function loginUser(Request $req)
     {
       $data=Member::where('email' ,'=', $req->email)->first();
+      if($data)
+      {
+        //check password
+        if(check($req->password, $data->password))
+        {
+          $req->session()->put('loginId',$data->id);
+          return redirect('dashboard');
+        }
+        else{
+          return back()->with('fail','Email and password does not match .Please try again');
+        } 
+      } 
+       else{
+          return back()->with('fail','Login failed Please try again');
+        }  
+
+      
 
     }
 
