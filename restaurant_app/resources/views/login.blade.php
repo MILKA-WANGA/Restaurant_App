@@ -14,6 +14,15 @@
             <h3 class="text-center text-muted text-lead">Login here</h3>
             <center>
             <form action="login-user" id="form1" class="p-2 m-2 bg-light "style="margin-bottom:20px;" >
+                
+                <form  action="register-user"  method="POST" class="p-2 m-2 bg-light"  id="form_2" style="margin-bottom:10px;" >
+                    @if (Session::has('success'))
+                     <div class="alert alert-success">{{Session::get('success')}}</div>
+                    @endif
+                    @if (Session::has('fail'))
+                    <div class="alert alert-danger">{{Session::get('fail')}}</div>
+                   @endif
+        
                 <div class="form-group">
                 <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;      
                 <input  type="email" name="email" placeholder="example@gmail.com"><br><br></div>
