@@ -69,6 +69,11 @@ class Hotel extends Controller
     {
       return view('login');
     }
+    public function loginUser(Request $req)
+    {
+      $data=Member::where('email' ,'=', $req->email)->first();
+
+    }
 
   }
 //     {

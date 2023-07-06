@@ -13,7 +13,7 @@
         <div class="shadow " style="width:300px; height:300px;margin-left:30%" >
             <h3 class="text-center text-muted text-lead">Login here</h3>
             <center>
-            <form action="/login" id="form1" class="p-2 m-2 bg-light "style="margin-bottom:20px;" >
+            <form action="login-user" id="form1" class="p-2 m-2 bg-light "style="margin-bottom:20px;" >
                 <div class="form-group">
                 <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;      
                 <input  type="email" name="email" placeholder="example@gmail.com"><br><br></div>
