@@ -101,6 +101,10 @@ class Hotel extends Controller
     {
       return view('dashboard');
     }
+    public function logout()
+    {
+      
+    }
 
   }
 //     {
