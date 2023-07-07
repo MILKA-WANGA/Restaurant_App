@@ -82,16 +82,16 @@ class Hotel extends Controller
         //check password
         if(Hash::check($req->password, $login->password))
         {
-          $req->session()->put('loginId',$login->id);
-        
-          return redirect('/dashboard');
+          $req->session()->put('loginId',$login->id);                
+         
+          return redirect("/dashboard");
         }
         else{
-          return back()->with('fail','Email and password does not match .Please try again');
+          return back()->with('fail',' Wrong   password Please enter correct  password');
         } 
       } 
        else{
-          return back()->with('fail','Login failed Please try again');
+          return back()->with('fail','Please provide a valid email address');
         }  
 
       
