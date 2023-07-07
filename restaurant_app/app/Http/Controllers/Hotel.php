@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
+use Symfony\Component\HttpFoundation\Session\Session;
+
 
 // use Illuminate\Auth\Middleware\Authenticate;
 //use Illuminate\Support\Facades\Auth;
@@ -99,7 +101,12 @@ class Hotel extends Controller
     }
     public function dashboard()
     {
-      return view('dashboard');
+      $data=array();
+      if(Session::has('loginId'))
+      {
+        $data=Member::where('id','=',Session::get('loginId'))->first();
+      }
+      return view('dashboard',compact($data));
     }
     public function logout()
     {

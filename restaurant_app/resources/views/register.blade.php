@@ -6,7 +6,7 @@
     
 
 <div class="container align-items-center mt-5">
-    <div class="shadow " style="width:500px; height:380px;margin-left:20%" >
+    <div class="shadow " style="width:400px; height:400px;margin-left:20%" >
         <h3 class="text-center text-muted text-lead">SignUp</h3>
         <center>
         <form  action="register-user"  method="POST" class="p-2 m-2 bg-light"  id="form_2" style="margin-bottom:10px;" >
