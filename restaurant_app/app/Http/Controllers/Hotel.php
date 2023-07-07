@@ -4,7 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
-use Hash;
+
+// use Illuminate\Auth\Middleware\Authenticate;
+//use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+
+//use App\Http\Controllers\Check;
 
 
 
@@ -48,7 +53,7 @@ class Hotel extends Controller
       $data->name=$req->input('name');
       $data->contact=$req->input('contact');
       $data->email=$req->input('email');
-      $data->password=$req->input('password');
+      $data->password=Hash::make($req->input('password'));
       $data->created_at;
       $data->updated_at;        
        $result=$data->save();    
@@ -71,13 +76,13 @@ class Hotel extends Controller
     }
     public function loginUser(Request $req)
     {
-      $data=Member::where('email' ,'=', $req->email)->first();
-      if($data)
+      $login=Member::where('email' ,'=', $req->email)->first();
+      if($login)
       {
         //check password
-        if(check($req->password, $data->password))
+        if(Hash::check($req->password, $login->password))
         {
-          $req->session()->put('loginId',$data->id);
+          $req->session()->put('loginId',$login->id);
           return redirect('dashboard');
         }
         else{
