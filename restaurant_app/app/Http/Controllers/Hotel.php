@@ -91,7 +91,7 @@ class Hotel extends Controller
         } 
       } 
        else{
-          return back()->with('fail','Please provide a valid email address');
+          return back()->with('fail','This Email is not registered.');
         }  
 
       
