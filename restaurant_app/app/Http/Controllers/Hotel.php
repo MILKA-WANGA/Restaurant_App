@@ -83,7 +83,7 @@ class Hotel extends Controller
         if(Hash::check($req->password, $login->password))
         {
           $req->session()->put('loginId',$login->id);
-          return redirect('dashboard');
+          return redirect('/dashboard');
         }
         else{
           return back()->with('fail','Email and password does not match .Please try again');
@@ -95,6 +95,10 @@ class Hotel extends Controller
 
       
 
+    }
+    public function dashboard()
+    {
+      return view('dashboard');
     }
 
   }

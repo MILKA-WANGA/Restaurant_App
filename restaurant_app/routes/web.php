@@ -36,3 +36,4 @@ Route::post("/register-user",[Hotel::class,'registerUser']);
 Route::get("/login",[Hotel::class,'login']);
 Route::post("login-user",[Hotel::class,'loginUser']);
 Route::view("/password","password");
+Route::get("/dashboard",[Hotel::class,'dashboard']);
