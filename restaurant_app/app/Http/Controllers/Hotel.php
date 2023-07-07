@@ -83,6 +83,7 @@ class Hotel extends Controller
         if(Hash::check($req->password, $login->password))
         {
           $req->session()->put('loginId',$login->id);
+        
           return redirect('/dashboard');
         }
         else{
