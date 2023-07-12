@@ -5,10 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Member;
 use Symfony\Component\HttpFoundation\Session\Session;
-
-
-// use Illuminate\Auth\Middleware\Authenticate;
-//use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 //use App\Http\Controllers\Check;
