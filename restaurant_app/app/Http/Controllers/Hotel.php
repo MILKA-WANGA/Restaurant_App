@@ -108,6 +108,10 @@ class Hotel extends Controller
     {
       
     }
+    public function password()
+    {
+      
+    }
 
   }
 //     {
