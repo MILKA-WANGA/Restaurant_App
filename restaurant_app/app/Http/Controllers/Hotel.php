@@ -112,6 +112,10 @@ class Hotel extends Controller
     {
       
     }
+    public function resetPassword()
+    {
+      
+    }
 
   }
 //     {
