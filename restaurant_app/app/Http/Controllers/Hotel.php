@@ -110,7 +110,7 @@ class Hotel extends Controller
     }
     public function password()
     {
-      
+      return view('password');
     }
     public function resetPassword()
     {
