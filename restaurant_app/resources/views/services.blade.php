@@ -18,7 +18,7 @@
                <img src="{{URL("storage/assets/breakfast/braek7.jpg")}}" alt="Image" style="border-radius: 50px">
               
                <p class="lead text-muted text-center " >ksh.<span class="text-decoration-line-through">120 </span>&nbsp;ksh.30</p>
-               <a href="view"><span >view</span></a>
+               <a href="/breakfast"><span >view</span></a>
             </div>
             </div>
            

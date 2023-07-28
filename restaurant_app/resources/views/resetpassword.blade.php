@@ -11,9 +11,9 @@
 <body>
     <div class="container align-items-center mt-5">
         <div class="shadow " style="width:300px; height:300px;margin-left:30%" >
-            <h3 class="text-center text-muted text-lead">Login here</h3>
+            <h3 class="text-center text-muted text-lead">Reset password</h3>
             <center>
-            <form action="login-user" method="POST" id="form1" class="p-2 m-2 bg-light "style="margin-bottom:20px;" >
+            <form action="/passwordReset" method="POST" id="form1" class="p-2 m-2 bg-light "style="margin-bottom:20px;" >
                 
                 
                     @if (Session::has('success'))
