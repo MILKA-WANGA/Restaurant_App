@@ -38,3 +38,4 @@ Route::post("login-user",[Hotel::class,'loginUser']);
 Route::view("/password","password");
 Route::post("/passwordReset",[Hotel::class,'passwordReset']);
 Route::get("/dashboard",[Hotel::class,'dashboard']);
+Route::get("/breakfast",[Hotel::class,'breakfast']);
