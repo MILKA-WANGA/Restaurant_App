@@ -116,6 +116,10 @@ class Hotel extends Controller
     {
       
     }
+    public function breakfast()
+    {
+      return view("breakfast");
+    }
 
   }
 //     {
